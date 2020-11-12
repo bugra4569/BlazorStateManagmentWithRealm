@@ -1,0 +1,9 @@
+﻿@inherits RealmComponent<AppState>
+<h3>ResetComponent</h3>
+<button class="btn btn-primary" @onclick="@Reset">Reset</button>
+@code {
+    void Reset()
+    {
+        Dispatch(new Server.Actions.ResetCount());
+    }
+}

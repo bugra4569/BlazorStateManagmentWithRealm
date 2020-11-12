@@ -1,0 +1,10 @@
+﻿@inherits RealmComponent<AppState>
+<h3>IncrementComponent</h3>
+<button class="btn btn-primary" @onclick="@IncrementCountbyOne">Increment</button>
+
+@code {
+    void IncrementCountbyOne()
+    {
+        Dispatch(new Server.Actions.IncrementByOne());
+    }
+}
